@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(34, 34, 80);
+}
+.header{
+  background-color: rgb(1, 1, 5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: padding-bottom 0.6s;
+  transition: padding-top 0.4s;
+}
+.header:hover{
+  background-color: rgb(1, 1, 5, 0.9);
+  box-shadow: 0 2px 50px 8px rgb(3, 4, 7);
+  padding-bottom: 23px;
+  padding-top: 23px;
+}
+.logo {
+  text-decoration: none;
+  color: beige;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow:1px 1px 8px #02d6fc;
+}
+
+.navbar a{
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow:1px 1px 8px #edf3f8;
+  color: beige;
+  margin-left: 35px;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.navbar a:hover{
+  color: aqua;
+  box-shadow: 0 2px 50px 8px rgb(172, 189, 238);
+  background-color: rgb(172, 189, 238, 0.35);
+  border-radius: 58px;
+}
+
+
+/*background*/
+.background-image {
+  background-image: url("images/explore2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  filter: blur(2px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/*boxes*/
+.container {
+  margin: 90px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.box {
+  flex: 1;
+  padding: 0px;
+  text-align: center;
+  margin: 10px 35px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  border-radius: 12px;
+  transition: 0.8s;
+}
+
+.box:hover{
+  box-shadow: 0 8px 22px 8px rgba(234, 236, 245, 0.7);
+  border-radius: 20px;
+  z-index: 2;
+  margin: 20px 20px;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  max-width: 100%;
+  height: 90%;
+  margin-bottom: 0px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px 8px rgba(250, 122, 2, 0.377);
+}
+
+.offer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 5px 4px 5px 4px;
+  margin-top: -63px;
+  background-color: rgba(232, 233, 235, 0.6);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: 0.5s;
+}
+.box:hover .offer-info{
+  margin-top: -60px;
+  padding: 7px 12px 9px 12px;
+  background-color: rgba(8, 8, 8, 0.8);
+}
+
+.box:hover .city-name, .box:hover .price{
+  text-shadow: 1px 1px 8px rgb(252, 249, 249);
+  color: aliceblue;
+}
+.city-name {
+  margin: 0;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px white;
+}
+
+.price {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px white;
+}
+
+button.btn-city {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 590px;
+  height: 350px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px){
+  .header {
+    background-color: rgb(1,1,5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .logo {
+    text-decoration: none;
+    color: beige;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 8px #02d6fc;
+  }
+
+  .navbar a {
+    font-size: 10px;
+    text-decoration: none;
+    color: beige;
+    margin-left: 7px;
+    font-weight: bolder;
+  }
+
+  .background-image {
+    height: 100vh;
+    color: beige;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background: url(images/explore2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /*background*/
+  .background-image {
+    background-image: url("images/explore2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    filter: blur(2px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  .overlay {
+    position: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+  
+  /*boxes*/
+  .container {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box {
+    background-color: red;
+    width: 350px;
+    text-align: center;
+    border-radius: 12px;
+    margin-left: 80%;
+    margin-bottom: -10px;
+  }
+  
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 50%;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px 8px rgba(250, 122, 2, 0.377);
+  }
+  
+  .offer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    background-color: rgba(232, 233, 235, 0.6);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: 0.5s;
+  }
+  .box:hover .offer-info{
+    padding: 7px 12px 9px 12px;
+    background-color: rgba(8, 8, 8, 0.8);
+  }
+  
+  .box:hover .city-name, .box:hover .price{
+    text-shadow: 1px 1px 8px rgb(252, 249, 249);
+    color: aliceblue;
+  }
+  .city-name {
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px white;
+  }
+  
+  .price {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px white;
+  }
+  
+  button.btn-city {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    border: 1px solid #ccc;
+    background: none;
+    border: none;
+  }
+}

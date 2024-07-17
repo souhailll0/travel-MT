@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore - MT.Travel</title>
+  <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">MT.Travel</a>
+
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/explore.html">Must see</a>
+            <a href="/services.html">Services</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blog.html">Owner</a>
+        </nav>
+  </header>
+
+  <main>
+    <section class="content-offers">
+      <div class="background-image"></div>
+      <div class="overlay"></div>
+
+      <div class="container">
+        <!-- ROW 1-->
+        <div class="row" >
+          <button class="btn-city">
+            <div class="box">
+            <div class="box-content">
+              <img src="images/Merzouga-desert-camps.jpg" alt="Image 1">
+              <div class="offer-info">
+                <h1 class="city-name">Laayoune</h1>
+                <h1 class="price">$129.99</h1>
+              </div>
+            </div>
+          </div>
+          </button>
+          
+          <button class="btn-city">
+            <div class="box">
+            <div class="box-content">
+              <img src="images/Chefchaouen.jpg" alt="Image 2">
+              <div class="offer-info">
+                <h1 class="city-name">Chefchaouen</h1>
+                <h1 class="price">$79.99</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+          </button>
+          
+
+        <!-- ROW 2 -->
+        <div class="row">
+          <button class="btn-city">
+            <div class="box">
+            <div class="box-content">
+              <img src="images/beach-in-nador.webp" alt="Image 3">
+              <div class="offer-info">
+                <h1 class="city-name">Hoceima</h1>
+                <h1 class="price">$129.99</h1>
+              </div>
+            </div>
+          </div>
+          </button>
+          
+          <button class="btn-city">
+            <div class="box">
+              <div class="box-content">
+                <img src="images/marrakech.jpg" alt="Image 4">
+                <div class="offer-info">
+                  <h1 class="city-name">Marrakech</h1>
+                  <h1 class="price">$89.99</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </button>
+
+        <!--ROW 3-->
+        <div class="row">
+          <button class="btn-city">
+            <div class="box">
+              <div class="box-content">
+                <img src="images/fes.jpg" alt="Image 5">
+                <div class="offer-info">
+                  <h1 class="city-name">Fes</h1>
+                  <h1 class="price">$69.99</h1>
+                </div>
+              </div>
+            </div>
+          </button>
+          
+          <button class="btn-city">
+            <div class="box">
+              <div class="box-content">
+                <img src="images/beach-in-nador.webp" alt="Image 6">
+                <div class="offer-info">
+                  <h1 class="city-name">Hoceima</h1>
+                  <h1 class="price">$129.99</h1>
+                </div>
+              </div>
+            </div>
+          </button>
+        </div>
+    
+      </div>
+    </section>
+    <script>
+      const buttons = document.getElementsByClassName('btn-city');
+
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+          alert('قريباً hhhhhhhhhhh');
+        });
+      }
+    </script>
+  </main>
+</body>
+</html>

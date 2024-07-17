@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - MT.Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">MT.Travel</a>
+
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/explore.html">Must see</a>
+            <a href="services.html">Services</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/blog.html">Owner</a>
+        </nav>
+    </header>
+
+  <main>
+    <section class="contact">
+      <div class="contactContent">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us for any inquiries or assistance.</p>
+        <form name="contact" method="post" netlify>
+            <input type="hidden" name="form-name" value="contact">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+        <div class="call-us">
+            <h1>Call us</h1>
+            <p>+212645625751</p>
+            <br>
+            <h1>Follow us on:</h1>
+              <i class="fab fa-instagram"></i> MT-Travel
+        </div>
+    </section>
+  </main>
+</body>
+</html>
